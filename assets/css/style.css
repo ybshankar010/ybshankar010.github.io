@@ -1,0 +1,28 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #121212;
+  color: #fff;
+  line-height: 1.6;
+  padding: 0 2rem;
+}
+h1, h2 {
+  color: #64ffda;
+}
+a {
+  color: #12D640;
+  text-decoration: none;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+section {
+  margin-top: 2rem;
+}
+footer {
+  margin-top: 4rem;
+  text-align: center;
+  color: #888;
+}

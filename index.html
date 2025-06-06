@@ -1,70 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>Bhavani Shankar Y – Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
 </head>
 <body>
-  <div class="container">
-    <header>
+  <header id="header">
+    <div class="container">
       <h1>Bhavani Shankar Y</h1>
-      <p>Senior Engineering Manager | AI/ML | Cloud</p>
-      <div class="links">
-        <a href="mailto:yeleswarapushankar@gmail.com">Email</a>
-        <a href="https://www.linkedin.com/in/shankar-bhavani-1ab72750/">LinkedIn</a>
-        <a href="https://ybshankar010.medium.com/">Blog</a>
-      </div>
-    </header>
+      <h2>I'm <span class="typing"></span></h2>
+      <nav class="nav-menu">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#interests">Interests</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    <section>
-      <h2>About Me</h2>
-      <p>Engineering leader with 11+ years of experience in AI/ML, cloud, and scalable systems. Proven track record in delivering impactful projects and managing high-performing teams.</p>
-    </section>
+  <section id="about">
+    <h2>About</h2>
+    <p>Results-driven engineering leader with 11+ years of experience in AI/ML, cloud, and scalable systems.</p>
+  </section>
 
-    <section>
-      <h2>Skills</h2>
-      <ul>
-        <li><strong>Languages:</strong> Java, Python, Ruby, Go</li>
-        <li><strong>ML/NLP:</strong> GPT-3, Word2Vec, CodeT5</li>
-        <li><strong>Cloud:</strong> AWS, Azure, Kubernetes</li>
-        <li><strong>Tools:</strong> Kafka, SQS, Elasticsearch, Jenkins</li>
-      </ul>
-    </section>
+  <section id="interests">
+    <h2>Interests</h2>
+    <ul>
+      <li>AI/ML</li>
+      <li>Cloud Infrastructure</li>
+      <li>System Design</li>
+      <li>Team Leadership</li>
+    </ul>
+  </section>
 
-    <section>
-      <h2>Projects</h2>
-      <ul>
-        <li><strong>Digital Agents:</strong> GenAI bots for supply chain automation</li>
-        <li><strong>Azure Migration:</strong> Migrated Fourkites infra, saving $500K</li>
-        <li><strong>Samsung Stories:</strong> Deployed graph-based personalization, filed patent</li>
-      </ul>
-    </section>
+  <section id="education">
+    <h2>Education</h2>
+    <ul>
+      <li>M.Tech – IIIT Hyderabad</li>
+      <li>B.Tech – V.R. Siddhartha Engineering College</li>
+    </ul>
+  </section>
 
-    <section>
-      <h2>Experience</h2>
-      <ul>
-        <li>Senior Engineering Manager @ Fourkites (2024–Present)</li>
-        <li>Senior Staff Engineer @ Fourkites (2023–2024)</li>
-        <li>Staff Engineer @ Fourkites (2020–2023)</li>
-        <li>Technical Lead @ Samsung R&D (2013–2018)</li>
-      </ul>
-    </section>
+  <section id="certifications">
+    <h2>Online Certifications</h2>
+    <ul>
+      <li>AI & ML – UpGrad</li>
+      <li>Cricket Analytics – Mad About Sports</li>
+      <li>Data Science with Python – Simplilearn</li>
+    </ul>
+  </section>
 
-    <section>
-      <h2>Awards</h2>
-      <ul>
-        <li>Patent: Knowledge Graph-based UI (Samsung)</li>
-        <li>Winner: Company Hackathon 'Illuminati'</li>
-        <li>Guest Speaker: API & Developer Conf</li>
-      </ul>
-    </section>
+  <section id="experience">
+    <h2>Experience</h2>
+    <ul>
+      <li>Senior Engineering Manager @ Fourkites</li>
+      <li>Senior Staff Engineer @ Fourkites</li>
+      <li>Technical Lead @ Samsung R&D</li>
+    </ul>
+  </section>
 
-    <footer>
-      <p>&copy; 2025 Bhavani Shankar Y</p>
-    </footer>
-  </div>
+  <section id="projects">
+    <h2>Projects</h2>
+    <ul>
+      <li>Digital Agents for Supply Chain</li>
+      <li>Azure Cloud Migration</li>
+      <li>On-device Graph Generation for Samsung</li>
+    </ul>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>Java, Python, Ruby, Go</li>
+      <li>Kafka, SQS, Elasticsearch</li>
+      <li>PostgreSQL, Cassandra, MongoDB</li>
+    </ul>
+  </section>
+
+  <section id="resume">
+    <h2>Resume</h2>
+    <p><a href="assets/resume.pdf" target="_blank">Download Resume</a></p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: yeleswarapushankar@gmail.com</p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/shankar-bhavani-1ab72750/">Profile</a></p>
+    <p>Medium: <a href="https://ybshankar010.medium.com/">Blog</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Bhavani Shankar Y</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script type="text/javascript">
+    var typed = new Typed('.typing', {
+      strings: ["Engineering Leader", "AI Enthusiast", "System Thinker"],
+      loop: true,
+      typeSpeed: 65,
+      backSpeed: 65
+    });
+  </script>
+
 </body>
 </html>
-
