@@ -1,143 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Bhavani Shankar Y – Portfolio</title>
-  <link href="assets/css/style.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhavani Shankar Y&nbsp;– Portfolio</title>
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        /* Basic Reset */
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fff;
+        }
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.95);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 10px 0;
+        }
+        nav li {
+            margin: 0 15px;
+        }
+        nav a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s ease-in-out;
+        }
+        nav a:hover {
+            color: #007acc;
+        }
+        /* Spacer to account for fixed nav */
+        .spacer {
+            margin-top: 70px;
+        }
+        /* Hero Section */
+        header.hero {
+            background-image: url('assets/img/background.png');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        header.hero h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+        header.hero p {
+            font-size: 1.25rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        /* Sections */
+        section {
+            padding: 60px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        section h2 {
+            margin-top: 0;
+            color: #007acc;
+            font-size: 2rem;
+        }
+        /* Skills */
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .skills-list span {
+            background-color: #f0f0f0;
+            padding: 5px 10px;
+            border-radius: 4px;
+            margin-bottom: 5px;
+            font-size: 0.9rem;
+        }
+        /* Articles */
+        .articles ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        .articles li {
+            margin-bottom: 25px;
+        }
+        .articles h3 {
+            margin: 0 0 5px 0;
+            font-size: 1.3rem;
+        }
+        .articles p {
+            margin: 0 0 10px 0;
+        }
+        /* Links */
+        a {
+            color: #007acc;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        /* Footer */
+        footer {
+            background-color: #f9f9f9;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.8rem;
+            color: #555;
+        }
+    </style>
 </head>
 <body>
-<nav class="nav-menu">
+    <nav>
         <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#interests">Interests</a></li>
-          <li><a href="#education">Education</a></li>
-          <li><a href="#certifications">Certifications</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#writing">Articles</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#resume">Resume</a></li>
-          <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#articles">Medium Articles</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
-      </nav>
-  <header id="header">
-    <div class="container">
-      
-<div style="display: flex; align-items: center; gap: 20px;">
-  <img src="assets/img/profile.png" alt="Profile Photo" style="width:150px;height:150px;border-radius:50%;object-fit:cover;">
-  <div>
-    <h1>Bhavani Shankar Y</h1>
-    
-  </div>
-</div>
-
-      <h2>I'm <span class="typing"></span></h2>
-      
-    </div>
-  </header>
-
-  <section id="about">
-
-    <h2>About</h2>
-<p>Results-driven engineering leader with 11+ years of experience in AI/ML, cloud, and scalable systems.</p>
-<p>I have led teams across startups and enterprises, delivering impactful AI-driven features and cloud transformation initiatives. 
-My career spans from building smart mobile experiences at Samsung to leading Generative AI strategy at Fourkites. I thrive in environments that value innovation, collaboration, and resilience.</p>
-<p>Currently, I am driving enterprise GenAI adoption and mentoring engineers to build scalable, fail-safe systems.</p>
-  </section>
-
-  <section id="interests">
-    <h2>Interests</h2>
-    <ul>
-      <li>AI/ML</li>
-      <li>Cloud Infrastructure</li>
-      <li>System Design</li>
-      <li>Team Leadership</li>
-    </ul>
-  </section>
-
-  <section id="education">
-    <h2>Education</h2>
-    <ul>
-      <li>M.Tech – IIIT Hyderabad</li>
-      <li>B.Tech – V.R. Siddhartha Engineering College</li>
-    </ul>
-  </section>
-
-  <section id="certifications">
-    <h2>Online Certifications</h2>
-    <ul>
-      <li>AI & ML – UpGrad</li>
-      <li>Cricket Analytics – Mad About Sports</li>
-      <li>Data Science with Python – Simplilearn</li>
-    </ul>
-  </section>
-
-  <section id="experience">
-    <h2>Experience</h2>
-    <ul>
-      <li>Senior Engineering Manager @ Fourkites</li>
-      <li>Senior Staff Engineer @ Fourkites</li>
-      <li>Technical Lead @ Samsung R&D</li>
-    </ul>
-  </section>
-
-  <section id="projects">
-    <h2>Projects</h2>
-    <ul>
-      <li>Digital Agents for Supply Chain</li>
-      <li>Azure Cloud Migration</li>
-      <li>On-device Graph Generation for Samsung</li>
-    </ul>
-  </section>
-
-  <section id="writing">
-    <h2>Writing</h2>
-    <ul>
-      <li><a href="https://ybshankar010.medium.com/exploring-the-power-of-vert-x-37f1d39c7c0c" target="_blank">Exploring the Power of Vert.x</a> – A walkthrough of Vert.x, a JVM-based reactive, polyglot framework ideal for creating asynchronous, high-concurrency applications.</li>
-      <li><a href="https://ybshankar010.medium.com/setting-up-your-django-website-with-gunicorn-nginx-and-godaddy-f53dfcec05df" target="_blank">Setting up your Django website with Gunicorn, Nginx and GoDaddy</a> – Step-by-step guide to serve a Django app via Gunicorn and Nginx on a VPS, link it to a custom domain, and enable HTTPS.</li>
-      <li><a href="https://ybshankar010.medium.com/sdk-api-the-difference-8ddf09ca44cc" target="_blank">SDK &lt;&gt; API | The difference</a> – Clarifies that an SDK bundles APIs, tools, and documentation whereas an API is just an interface to access functionality.</li>
-      <li><a href="https://ybshankar010.medium.com/data-exploration-univariate-analysis-plots-843cad1a52f3" target="_blank">Data Exploration | Univariate Analysis | Plots</a> – Demonstrates how to perform univariate exploratory data analysis using plots and descriptive statistics, with a Seaborn example.</li>
-      <li><a href="https://ybshankar010.medium.com/logging-in-a-monolith-spring-service-d29fbbd44af7" target="_blank">Logging in a monolith (Spring) service</a> – Explains integrating Spring Sleuth with logging frameworks to propagate unique trace IDs across requests for better observability.</li>
-      <li><a href="https://ybshankar010.medium.com/ml-101-improving-titanic-score-from-0-7-to-1-6ef199051ec6" target="_blank">ML 101 — Improving Titanic score from 0.7 to 1</a> – Walks through the Kaggle Titanic challenge optimizing a predictive model from ~0.72 to ~0.83 by refining features and tuning.</li>
-    </ul>
-  </section>
-  
-  <section id="skills">
-    <h2>Skills</h2>
-    <ul>
-      <li>Java, Python, Ruby, Go</li>
-      <li>Kafka, SQS, Elasticsearch</li>
-      <li>PostgreSQL, Cassandra, MongoDB</li>
-    </ul>
-  </section>
-
-  <section id="resume">
-    <h2>Resume</h2>
-    <p><a href="assets/resume.pdf" target="_blank">Download Resume</a></p>
-  </section>
-
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: yeleswarapushankar@gmail.com</p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/shankar-bhavani-1ab72750/">Profile</a></p>
-    <p>Medium: <a href="https://ybshankar010.medium.com/">Blog</a></p>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Bhavani Shankar Y</p>
-  </footer>
-
-  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-  <script type="text/javascript">
-    var typed = new Typed('.typing', {
-      strings: ["Engineering Leader", "AI Enthusiast", "System Thinker"],
-      loop: true,
-      typeSpeed: 65,
-      backSpeed: 65
-    });
-  </script>
-
+    </nav>
+    <div class="spacer"></div>
+    <header class="hero">
+        <h1>Bhavani&nbsp;Shankar&nbsp;Y</h1>
+        <p>Strategic and hands‑on Engineering Manager with 11+ years of experience in AI/ML and scalable systems. Driving innovation and delivering enterprise‑grade solutions across industries.</p>
+    </header>
+    <section id="about">
+        <h2>About</h2>
+        <p>Bhavani&nbsp;Shankar is a results‑driven engineering leader with over 11&nbsp;years of experience in AI/ML, cloud and scalable systems. He has led teams across startups and enterprises, delivering impactful AI‑driven features and cloud transformations. His career spans from building smart mobile experiences at Samsung to leading generative AI strategy at Fourkites. Currently, he drives enterprise GenAI adoption and mentors engineers to build scalable, fail‑safe systems.</p>
+    </section>
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-list">
+            <span>Gen&nbsp;AI – NLP, Agentic AI, GPT, Word2Vec</span>
+            <span>Frameworks – LangGraph, LangFuse, AI&nbsp;gateway, Deepeval</span>
+            <span>ML – Clustering, Classification, Regression</span>
+            <span>Databases – Postgres, SQLite, Cassandra, Elasticsearch, MongoDB</span>
+            <span>Languages – Java, Python, Ruby, Go</span>
+            <span>Message Queues – Kafka, SQS, Pulsar</span>
+            <span>Cloud – AWS, Azure, Docker, Kubernetes</span>
+            <span>Microservices &amp; Design Patterns</span>
+        </div>
+    </section>
+    <section id="articles" class="articles">
+        <h2>Featured&nbsp;Medium&nbsp;Articles</h2>
+        <ul>
+            <li>
+                <h3><a href="https://ybshankar010.medium.com/from-genres-to-conversations-next-gen-movie-recommendations-with-llms-6041aab6defa" target="_blank">From Genres to Conversations: Next‑Gen Movie Recommendations with LLMs</a></h3>
+                <p>This article explores how to enhance movie recommendation engines by integrating content‑based filtering with LLM‑powered reasoning. Bhavani discusses using embeddings to capture nuanced user preferences and building a hybrid engine for personalized recommendations.</p>
+            </li>
+            <li>
+                <h3><a href="https://ybshankar010.medium.com/how-to-make-your-slms-more-accurate-ddab4043c8e7" target="_blank">How to Make Your SLMs More Accurate</a></h3>
+                <p>Inspired by NVIDIA’s paper on small language models, this post describes how Bhavani evaluated his chatbot’s performance and improved accuracy using evaluation metrics, information retrieval and rule‑based enhancements.</p>
+            </li>
+            <li>
+                <h3><a href="https://ybshankar010.medium.com/building-your-genai-tech-stack-from-early-wins-to-scalable-systems-a169099ae154" target="_blank">Building Your GenAI Tech Stack: From Early Wins to Scalable Systems</a></h3>
+                <p>Bhavani shares a practical guide to constructing a GenAI technology stack, covering everything from quick prototypes to production‑ready systems. He outlines the components, pitfalls and best practices for scaling generative AI solutions.</p>
+            </li>
+        </ul>
+        <p>For more articles, visit <a href="https://medium.com/@ybshankar010" target="_blank">Shankar&nbsp;Y&nbsp;Bhavani’s Medium profile</a>.</p>
+    </section>
+    <section id="resume">
+        <h2>Resume</h2>
+        <p>You can download my latest resume <a href="assets/resume.pdf" target="_blank">here</a>.</p>
+    </section>
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email:&nbsp;<a href="mailto:yeleswarapushankar@gmail.com">yeleswarapushankar@gmail.com</a><br>
+           LinkedIn:&nbsp;<a href="https://www.linkedin.com/in/ybs010" target="_blank">linkedin.com/in/ybs010</a><br>
+           GitHub:&nbsp;<a href="https://github.com/ybshankar010" target="_blank">github.com/ybshankar010</a><br>
+           Medium:&nbsp;<a href="https://ybshankar010.medium.com/" target="_blank">medium.com/ybshankar010</a>
+        </p>
+    </section>
+    <footer>
+        <p>©&nbsp;2025&nbsp;Bhavani&nbsp;Shankar&nbsp;Y. All&nbsp;rights&nbsp;reserved.</p>
+    </footer>
 </body>
 </html>
