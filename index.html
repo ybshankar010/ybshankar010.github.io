@@ -79,6 +79,12 @@
             color: #007acc;
             font-size: 2rem;
         }
+        .overview-audio audio {
+            display: block;
+            width: 100%;
+            max-width: 520px;
+            margin-top: 15px;
+        }
         /* Skills */
         .skills-list {
             display: flex;
@@ -129,6 +135,7 @@
     <nav>
         <ul>
             <li><a href="#about">About</a></li>
+            <li><a href="#overview">Overview</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#articles">Medium Articles</a></li>
             <li><a href="#resume">Resume</a></li>
@@ -143,6 +150,14 @@
     <section id="about">
         <h2>About</h2>
         <p>Bhavani&nbsp;Shankar is a results‑driven engineering leader with over 11&nbsp;years of experience in AI/ML, cloud and scalable systems. He has led teams across startups and enterprises, delivering impactful AI‑driven features and cloud transformations. His career spans from building smart mobile experiences at Samsung to leading generative AI strategy at Fourkites. Currently, he drives enterprise GenAI adoption and mentors engineers to build scalable, fail‑safe systems.</p>
+    </section>
+    <section id="overview" class="overview-audio">
+        <h2>Overview Audio</h2>
+        <audio controls preload="none">
+            <source src="assets/overview.mp3" type="audio/mpeg">
+            Your browser does not support the audio element. You can access the file directly
+            <a href="assets/overview.mp3">here</a>.
+        </audio>
     </section>
     <section id="skills">
         <h2>Skills</h2>
