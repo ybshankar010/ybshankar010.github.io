@@ -162,6 +162,26 @@ button:focus-visible {
   flex-wrap: wrap;
 }
 
+.hero-audio {
+  margin-top: 0.9rem;
+  max-width: 620px;
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(13, 138, 149, 0.24);
+  background: linear-gradient(180deg, rgba(13, 138, 149, 0.06) 0%, rgba(255, 255, 255, 0.96) 100%);
+  padding: 0.9rem;
+}
+
+.hero-audio p {
+  margin: 0 0 0.5rem;
+  font-weight: 700;
+  color: var(--teal-700);
+}
+
+.hero-audio audio {
+  display: block;
+  width: 100%;
+}
+
 .btn {
   display: inline-flex;
   align-items: center;
@@ -265,20 +285,6 @@ button:focus-visible {
   transform: translateY(-3px);
   border-color: rgba(246, 111, 61, 0.42);
   box-shadow: var(--shadow-strong);
-}
-
-.audio-card {
-  border-radius: var(--radius-md);
-  border: 1px solid rgba(13, 138, 149, 0.24);
-  background: linear-gradient(180deg, rgba(13, 138, 149, 0.06) 0%, rgba(255, 255, 255, 0.96) 100%);
-  padding: 1rem;
-}
-
-.audio-card audio {
-  display: block;
-  width: 100%;
-  max-width: 560px;
-  margin-top: 0.6rem;
 }
 
 .skill-groups,
