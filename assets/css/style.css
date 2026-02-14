@@ -377,13 +377,41 @@ button:focus-visible {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1rem;
+  align-content: start;
 }
 
 .contact-card {
   display: flex;
   flex-direction: column;
   gap: 0.45rem;
+  min-height: 170px;
+}
+
+.contact-card-action {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  margin-left: auto;
+  margin-top: auto;
+  border-radius: 50%;
   color: var(--teal-700);
+  border: 1px solid rgba(13, 138, 149, 0.34);
+  background: linear-gradient(145deg, rgba(13, 138, 149, 0.14) 0%, rgba(255, 255, 255, 0.98) 58%, rgba(246, 111, 61, 0.2) 100%);
+  box-shadow: var(--shadow-soft);
+  transition: transform 180ms ease, box-shadow 180ms ease, color 180ms ease;
+}
+
+.contact-card-action svg {
+  width: 24px;
+  height: 24px;
+}
+
+.contact-card-action:hover {
+  transform: translateY(-3px);
+  color: var(--orange-500);
+  box-shadow: var(--shadow-strong);
 }
 
 .contact-label {
@@ -464,8 +492,7 @@ footer {
     grid-template-columns: 1fr;
   }
 
-  .contact-shell,
-  .contact-secondary {
+  .contact-shell {
     grid-template-columns: 1fr;
   }
 
@@ -491,6 +518,10 @@ footer {
 
   .skill-groups,
   .stat-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-secondary {
     grid-template-columns: 1fr;
   }
 
