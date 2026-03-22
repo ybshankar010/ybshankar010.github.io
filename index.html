@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <div class="page-bg" aria-hidden="true"></div>
+
+    <div id="scroll-progress" aria-hidden="true"></div>
 
     <nav class="site-nav" aria-label="Primary">
         <div class="container nav-inner">
@@ -28,10 +29,17 @@
 
     <main id="top">
         <header class="hero section-pad">
+            <!-- Pulse rings -->
+            <div class="pulse-container" aria-hidden="true">
+                <div class="pulse-ring"></div>
+                <div class="pulse-ring"></div>
+                <div class="pulse-ring"></div>
+            </div>
+
             <div class="container hero-grid">
                 <div class="hero-copy reveal">
                     <p class="kicker">Applied AI Leadership</p>
-                    <h1>Building production-ready LLM systems and agent workflows at enterprise scale.</h1>
+                    <h1>Building production-ready <span class="text-accent">LLM systems and agent workflows</span> at enterprise scale.</h1>
                     <p class="hero-subtext">I am Bhavani Shankar Y, an Applied AI engineering leader with 12+ years of experience delivering measurable impact across NLP, distributed systems, and cloud-native platforms.</p>
                     <div class="hero-cta">
                         <a class="btn btn-primary" href="assets/resume.pdf" target="_blank" rel="noopener noreferrer">View Resume</a>
@@ -45,7 +53,7 @@
                         </audio>
                     </div>
                 </div>
-                <aside class="profile-card reveal" aria-label="Profile summary">
+                <aside class="profile-card reveal reveal-delay-2" aria-label="Profile summary">
                     <img src="assets/img/profile.png" alt="Portrait of Bhavani Shankar Y">
                     <h2>Senior Engineering Manager</h2>
                     <p>LLM Systems, Agent Architectures, and Scalable AI Platforms</p>
@@ -53,40 +61,46 @@
             </div>
         </header>
 
-        <section class="impact section-pad-sm" aria-label="Impact snapshot">
-            <div class="container stat-grid reveal">
-                <article class="stat-card">
-                    <h3>12+</h3>
-                    <p>Years in AI and ML systems</p>
-                </article>
-                <article class="stat-card">
-                    <h3>15%</h3>
-                    <p>ETA accuracy improvement delivered</p>
-                </article>
-                <article class="stat-card">
-                    <h3>$500K</h3>
-                    <p>Annual savings from cloud migration</p>
-                </article>
-                <article class="stat-card">
-                    <h3>10</h3>
-                    <p>Pilot customers onboarded in Doc AI</p>
-                </article>
+        <section class="impact section-pad-sm" data-glow="teal" aria-label="Impact snapshot">
+            <div class="container">
+                <p class="eyebrow">Impact</p>
+                <div class="stat-grid reveal">
+                    <article class="stat-card">
+                        <h3>12+</h3>
+                        <p>Years in AI and ML systems</p>
+                    </article>
+                    <article class="stat-card">
+                        <h3>15%</h3>
+                        <p>ETA accuracy improvement delivered</p>
+                    </article>
+                    <article class="stat-card">
+                        <h3>$500K</h3>
+                        <p>Annual savings from cloud migration</p>
+                    </article>
+                    <article class="stat-card">
+                        <h3>10</h3>
+                        <p>Pilot customers onboarded in Doc AI</p>
+                    </article>
+                </div>
             </div>
         </section>
 
-        <section id="about" class="section-pad">
+        <section id="about" class="section-about section-pad" data-glow="orange">
             <div class="container reveal">
-                <h2>About</h2>
+                <span class="about-deco" aria-hidden="true">"</span>
+                <p class="eyebrow">About</p>
+                <h2 class="reveal-left">About</h2>
                 <p class="lead">Results-focused engineering leader with deep expertise in LLM systems, planning-based agent architectures, and distributed cloud platforms. I translate research-grade concepts into reliable products that improve business performance.</p>
                 <p>Across Samsung and FourKites, I have led high-impact teams, improved product quality at scale, and delivered systems spanning conversational AI, document intelligence, and supply chain automation.</p>
             </div>
         </section>
 
-        <section id="skills" class="section-pad">
+        <section id="skills" class="section-pad" data-glow="violet">
             <div class="container reveal">
-                <h2>Skills</h2>
+                <p class="eyebrow">Expertise</p>
+                <h2 class="reveal-right">Skills</h2>
                 <div class="skill-groups">
-                    <article class="card">
+                    <article class="card skill-card reveal reveal-delay-1" data-accent="teal">
                         <h3>LLM Systems</h3>
                         <ul class="chip-list">
                             <li>Fine-tuning</li>
@@ -96,7 +110,7 @@
                             <li>Tool-Augmented Agents</li>
                         </ul>
                     </article>
-                    <article class="card">
+                    <article class="card skill-card reveal reveal-delay-2" data-accent="violet">
                         <h3>Agent Frameworks</h3>
                         <ul class="chip-list">
                             <li>LangGraph</li>
@@ -106,7 +120,7 @@
                             <li>Temporal</li>
                         </ul>
                     </article>
-                    <article class="card">
+                    <article class="card skill-card reveal reveal-delay-3" data-accent="orange">
                         <h3>Platforms and Infra</h3>
                         <ul class="chip-list">
                             <li>AWS (EKS)</li>
@@ -116,7 +130,7 @@
                             <li>SQS</li>
                         </ul>
                     </article>
-                    <article class="card">
+                    <article class="card skill-card reveal reveal-delay-4" data-accent="emerald">
                         <h3>Programming and Data</h3>
                         <ul class="chip-list">
                             <li>Python</li>
@@ -130,21 +144,22 @@
             </div>
         </section>
 
-        <section id="projects" class="section-pad-sm">
+        <section id="projects" class="section-pad-sm" data-glow="blue">
             <div class="container reveal">
-                <h2>Selected Projects</h2>
+                <p class="eyebrow">Work</p>
+                <h2 class="reveal-left">Selected Projects</h2>
                 <div class="project-grid">
-                    <article class="card project-card">
+                    <article class="card project-card reveal reveal-delay-1" data-accent="teal">
                         <h3>Loft: Natural Language to Workflow Compiler</h3>
                         <p>Designed an LLM-powered compiler that converts natural language requests into deterministic DAG execution plans using planner-executor architecture with LangGraph.</p>
                         <p class="project-impact">Outcome: Reduced enterprise integration time from 4 weeks to less than 0.5 days in internal evaluation.</p>
                     </article>
-                    <article class="card project-card">
+                    <article class="card project-card reveal reveal-delay-2" data-accent="orange">
                         <h3>Document Intelligence Agent</h3>
                         <p>Built a document processing system for structured extraction from BOLs, invoices, and shipment updates with HITL validation and feedback loops.</p>
                         <p class="project-impact">Outcome: Successfully onboarded 10 pilot customers with measurable operational gains.</p>
                     </article>
-                    <article class="card project-card">
+                    <article class="card project-card reveal reveal-delay-3" data-accent="violet">
                         <h3>Conversational AI Assistant</h3>
                         <p>Architected a tool-augmented assistant for enterprise structured data reasoning with model routing, observability, and low-latency response workflows.</p>
                         <p class="project-impact">Outcome: Improved execution accuracy through fine-tuning and prompt optimization while reducing hallucinations.</p>
@@ -153,19 +168,20 @@
             </div>
         </section>
 
-        <section id="articles" class="section-pad">
+        <section id="articles" class="section-pad" data-glow="orange">
             <div class="container reveal">
-                <h2>Featured Medium Articles</h2>
+                <p class="eyebrow">Writing</p>
+                <h2 class="reveal-right">Featured Medium Articles</h2>
                 <div class="article-grid">
-                    <article class="card article-card">
+                    <article class="card article-card reveal reveal-delay-1">
                         <h3><a href="https://ybshankar010.medium.com/from-genres-to-conversations-next-gen-movie-recommendations-with-llms-6041aab6defa" target="_blank" rel="noopener noreferrer">From Genres to Conversations: Next-Gen Movie Recommendations with LLMs</a></h3>
                         <p>A practical look at hybrid recommendation systems combining embeddings and LLM reasoning for better personalization.</p>
                     </article>
-                    <article class="card article-card">
+                    <article class="card article-card reveal reveal-delay-2">
                         <h3><a href="https://ybshankar010.medium.com/how-to-make-your-slms-more-accurate-ddab4043c8e7" target="_blank" rel="noopener noreferrer">How to Make Your SLMs More Accurate</a></h3>
                         <p>Evaluation-driven strategies to improve small language model performance through retrieval and rule-assisted controls.</p>
                     </article>
-                    <article class="card article-card">
+                    <article class="card article-card reveal reveal-delay-3">
                         <h3><a href="https://ybshankar010.medium.com/building-your-genai-tech-stack-from-early-wins-to-scalable-systems-a169099ae154" target="_blank" rel="noopener noreferrer">Building Your GenAI Tech Stack</a></h3>
                         <p>A blueprint for moving from quick GenAI prototypes to resilient, production-scale systems.</p>
                     </article>
@@ -174,9 +190,10 @@
             </div>
         </section>
 
-        <section id="resume" class="section-pad-sm">
+        <section id="resume" class="section-resume section-pad-sm" data-glow="teal">
             <div class="container reveal">
-                <h2>Resume</h2>
+                <p class="eyebrow">Resume</p>
+                <h2 class="reveal-left">Resume</h2>
                 <div class="card resume-card">
                     <p>Download the latest resume for detailed experience, projects, publications, and education.</p>
                     <a class="btn btn-primary" href="assets/resume.pdf" target="_blank" rel="noopener noreferrer">Open Resume (PDF)</a>
@@ -184,11 +201,12 @@
             </div>
         </section>
 
-        <section id="contact" class="section-pad">
+        <section id="contact" class="section-pad" data-glow="violet">
             <div class="container reveal">
-                <h2>Contact</h2>
+                <p class="eyebrow">Contact</p>
+                <h2 class="reveal-right">Contact</h2>
                 <div class="contact-shell">
-                    <a class="card contact-primary" href="mailto:yeleswarapushankar@gmail.com">
+                    <a class="contact-primary" href="mailto:yeleswarapushankar@gmail.com">
                         <span class="contact-label">Primary Contact</span>
                         <span class="contact-title">Email me</span>
                         <span class="contact-note">Best for project discussions, consulting, and collaborations.</span>
@@ -196,7 +214,7 @@
                         <span class="contact-action">Send email</span>
                     </a>
                     <div class="contact-secondary">
-                        <article class="card contact-card">
+                        <article class="contact-card">
                             <span class="contact-title">LinkedIn</span>
                             <span class="contact-note">Best for professional networking and collaboration.</span>
                             <a class="contact-card-action" href="https://www.linkedin.com/in/ybs010" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile" title="LinkedIn">
@@ -205,7 +223,7 @@
                                 </svg>
                             </a>
                         </article>
-                        <article class="card contact-card">
+                        <article class="contact-card">
                             <span class="contact-title">GitHub</span>
                             <span class="contact-note">Code, experiments, and engineering work.</span>
                             <a class="contact-card-action" href="https://github.com/ybshankar010" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile" title="GitHub">
@@ -214,7 +232,7 @@
                                 </svg>
                             </a>
                         </article>
-                        <article class="card contact-card">
+                        <article class="contact-card">
                             <span class="contact-title">Medium</span>
                             <span class="contact-note">Long-form writing on AI systems and product thinking.</span>
                             <a class="contact-card-action" href="https://ybshankar010.medium.com/" target="_blank" rel="noopener noreferrer" aria-label="Medium profile" title="Medium">
@@ -229,8 +247,69 @@
         </section>
     </main>
 
-    <footer>
+    <footer class="footer-dark">
         <p>&copy; 2026 Bhavani Shankar Y. All rights reserved.</p>
     </footer>
+
+    <script>
+    (function () {
+
+        // 1. Scroll progress bar
+        var progressBar = document.getElementById('scroll-progress');
+        window.addEventListener('scroll', function () {
+            var scrolled = window.scrollY;
+            var total = document.body.scrollHeight - window.innerHeight;
+            progressBar.style.width = (total > 0 ? (scrolled / total) * 100 : 0) + '%';
+        }, { passive: true });
+
+        // 2. Scroll-triggered element reveals (up, left, right variants)
+        var revealObserver = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+
+        document.querySelectorAll('.reveal, .reveal-left, .reveal-right').forEach(function (el) {
+            revealObserver.observe(el);
+        });
+
+        // 3. Per-section ambient glow — fades in once as section enters view
+        var glowObserver = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('section-visible');
+                    glowObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.05 });
+
+        document.querySelectorAll('[data-glow]').forEach(function (el) {
+            glowObserver.observe(el);
+        });
+
+        // 4. Active nav link tracking — highlights the section currently in view
+        var navLinks = document.querySelectorAll('.site-nav a[href^="#"]');
+
+        var navObserver = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+                var id = entry.target.getAttribute('id');
+                var link = document.querySelector('.site-nav a[href="#' + id + '"]');
+                if (!link) return;
+                if (entry.isIntersecting) {
+                    navLinks.forEach(function (a) { a.classList.remove('active'); });
+                    link.classList.add('active');
+                }
+            });
+        }, { rootMargin: '-35% 0px -60% 0px' });
+
+        document.querySelectorAll('section[id]').forEach(function (sec) {
+            navObserver.observe(sec);
+        });
+
+    })();
+    </script>
+
 </body>
 </html>
